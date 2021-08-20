@@ -1,4 +1,5 @@
 
 package-lock.json
-dist/app.html
-node_modules/@babel/core/lib/config/item.js
+dist/*
+node_modules/*
+.DS_Store
