@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0D1322">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Share Control | Wep APP para compartir archivos</title>
+
+  <!-- Fonts, stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./images/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="Share Control"/>
+  <meta name="msapplication-TileColor" content="#0D1322" />
+  <meta name="msapplication-TileImage" content="./images/mstile-144x144.png" />
+
+</head>
+<body>
+  
+  <header>
+    <a class="brand" href="/">
+      
+        Share Control
+      
+      <span class="pill">
+        V1.0
+      </span>
+    </a>
+    
+    <button class="thin mobile-menu icon-menu" onclick="toggleMenu()"
+    aria-label="Toggle Menu">
+    </button>
+
+    <nav>
+      <!-- <a href="#">How it works</a> -->
+      <a href="#about">Acerca</a>
+      <a href="https://github.com/cgasper79/blaze">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="info">
+        <h1 class="title">
+          Comparta archivos de manera ágil</h1>
+        <h2 class="subtitle">¡Usa solo el navegador de tu dispositivo!</h2>
+
+        <a href="/app" class="btn">
+          Empezar a compartir
+        </a>
+        
+      </div>
+
+      <img class="network-img" src="images/illustrations/network_compress.png" alt="Devices connected using Share Control">
+
+      <svg class="waves" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,160L21.8,160C43.6,160,87,160,131,181.3C174.5,203,218,245,262,234.7C305.5,224,349,160,393,133.3C436.4,107,480,117,524,106.7C567.3,96,611,64,655,80C698.2,96,742,160,785,176C829.1,192,873,160,916,138.7C960,117,1004,107,1047,112C1090.9,117,1135,139,1178,170.7C1221.8,203,1265,245,1309,234.7C1352.7,224,1396,160,1418,128L1440,96L1440"></path>
+      </svg>
+
+    </section>
+
+    <section class="features" id="about">
+      <div class="feature">
+        <img src="images/illustrations/two_devices_compress.png" alt="Laptop and mobile connected together">
+        <h2>Fácil de utilizar</h2>
+        <p>
+          Share Control es una aplicación web, simplemente ábrala en su navegador, únase a una sala y comience a compartir. No es necesario descargar aplicaciones específicas para diferentes plataformas.
+        </p>
+      </div>
+
+      <div class="feature">
+        <img src="images/illustrations/three_devices_compress.png" alt="Laptop and two mobiles connected together">
+        <h2 style="margin-top: 25px">Multi-dispositivo 
+        <p>
+          Tradicionalmente, compartir archivos en varios dispositivos ha sido una molestia. Con Share Control, puede compartir archivos en varios dispositivos con facilidad.
+        </p>
+      </div>
+      
+      <div class="feature">
+        <img src="images/illustrations/world_compressed.png" alt="Devices in different parts of the world using Share Control to share files">
+        <h2>
+          En cualquier sitio</h2>
+        <p>
+          Share Control se basa en tecnologías web modernas, lo que le permite funcionar en dispositivos muy alejados entre sí. Solo necesita estar conectado a Internet.
+        </p>
+      </div>
+      
+    </section>
+
+    <section class="about" >
+
+      <blockquote>
+        <span>"</span>Una forma rápida y sencilla de transferir archivos entre mi portátil, mi iPhone o mi iPad<span>"</span>
+
+        <footer>
+          <a href="https://github.com/cgasper79" target="_blank">
+            <img src="https://avatars.githubusercontent.com/u/51058790?v=4" alt="cgasper79">
+          </a>
+          <cite class="author">Cristian Gascón</cite>
+          <cite class="position">GasperWebDesign</cite>
+        </footer>
+      </blockquote>
+      
+    </section>
+
+    <section class="hero final-cta">
+
+      <h2 class="title"> ¡Comencemos a compartir!</h2>
+      <h3 class="subtitle">No requiere registrarse, es completamente gratis</h3>
+
+      <a href="/app" class="btn">
+        Empezar a compartir
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <a href="https://gasperwebdesign.com/"><img src="images/illustrations/logo.png" alt="GasperWebDesign"></a>
+    <p>&copy; Copyright  <a href="https://github.com/cgasper79" target="_blank">cgasper79</a>
+    | Hospedado en mi Raspberry Pi Atenea</p>
+  </footer>
+
+  <script>
+    
+    function toggleMenu() {
+      var menu = document.querySelector('.mobile-menu');
+      menu.classList.toggle('icon-menu');
+      menu.classList.toggle('icon-cancel');
+
+      var nav = document.querySelector('header nav');
+      switch (nav.style.display) {
+        case 'flex':
+          nav.style.display = 'none';
+          break;
+        default:
+          nav.style.display = 'flex';
+          break;
+      }
+    }
+  
+  </script>
+  
+</body>
+</html>
